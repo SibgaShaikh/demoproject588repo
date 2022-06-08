@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-$con = mysql_connect("mysql.cis.ksu.edu","cis_id","password");
+$con = mysql_connect("demosrv588.database.windows.net","demoadmin588v","asdf@123");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
