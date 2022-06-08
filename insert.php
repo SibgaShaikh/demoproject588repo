@@ -1,21 +1,14 @@
-<html>
-<body>
 <?php
-$con = mysql_connect("tcp:demosrv588.database.windows.net,1433","demoadmin588v","asdf@123");
-if (!$con)
-  {
-  die('Could not connect: ' . mysql_error());
-  }
-mysql_select_db("demoadmin588v", $con);
-$sql="INSERT INTO nametable (fname, lname)
-VALUES
-('$_POST[fname]','$_POST[lname]')";
-if (!mysql_query($sql,$con))
-  {
-  die('Error: ' . mysql_error());
-  }
-echo "1 record added";
-mysql_close($con)
+$servername = "tcp:demosrv588.database.windows.net,1433";
+$username = "demoadmin588v";
+$password = "asdf@123";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 ?>
-</body>
-</html>
