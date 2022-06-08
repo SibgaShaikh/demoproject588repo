@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-$con = mysql_connect("demosrv588.database.windows.net","demoadmin588v","asdf@123");
+$con = mysql_connect("tcp:demosrv588.database.windows.net,1433","demoadmin588v","asdf@123");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
