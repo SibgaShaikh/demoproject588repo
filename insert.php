@@ -6,7 +6,7 @@ if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
-mysql_select_db("cis_id", $con);
+mysql_select_db("demoadmin588v", $con);
 $sql="INSERT INTO nametable (fname, lname)
 VALUES
 ('$_POST[fname]','$_POST[lname]')";
