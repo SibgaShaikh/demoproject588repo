@@ -5,7 +5,7 @@ $password = "asdf@123";
 $dbname = "demodb588";
 echo "jignesh";
 // Create connection
-$conn = new mysqli($servername,
+/*$conn = new mysqli($servername,
 $username, $password, $dbname);
 
 // Check connection
@@ -15,5 +15,5 @@ die("Connection failed: "
 }
 $sql="INSERT INTO nametable (fname, lname)
 VALUES
-('$_POST[fname]','$_POST[lname]')";
+('$_POST[fname]','$_POST[lname]')";*/
 ?>
