@@ -1,5 +1,5 @@
 <?php
-$servername = "demosrv588.database.windows.net";
+$servername = "tcp:demosrv588.database.windows.net,1443";
 $username = "demoadmin588v";
 $password = "asdf@123";
 $dbname = "demodb588";
@@ -13,5 +13,7 @@ if ($conn->connect_error) {
 die("Connection failed: "
 . $conn->connect_error);
 }
-
+$sql="INSERT INTO nametable (fname, lname)
+VALUES
+('$_POST[fname]','$_POST[lname]')";
 ?>
