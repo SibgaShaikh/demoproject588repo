@@ -1,5 +1,5 @@
 <?php
-$servername = "tcp:demosrv588.database.windows.net,1443";
+$servername = "demosrv588.database.windows.net";
 $username = "demoadmin588v";
 $password = "asdf@123";
 $dbname = "demodb588";
