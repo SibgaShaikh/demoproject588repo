@@ -3,7 +3,7 @@ $servername = "demosrv588.database.windows.net";
 $username = "demoadmin588v";
 $password = "asdf@123";
 $dbname = "demodb588";
-
+echo "jignesh";
 // Create connection
 $conn = new mysqli($servername,
 $username, $password, $dbname);
