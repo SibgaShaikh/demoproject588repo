@@ -1,9 +1,8 @@
-INDEX.PHP
 <html>
 
 <body>
 
-<h1>A small example page to insert some data in to the MySQL database using PHP</h1>
+<h1>Demoproject588</h1>
 
 <form action="insert.php" method="post">
 
